@@ -1,10 +1,10 @@
-import { createApp } from 'vue'
 import App from './App.vue'
-import { createRouter, createWebHashHistory } from 'vue-router'
 import Contacts from './components/Contacts.vue'
 import Contact from './components/Contact.vue'
 import Edit from './components/Edit.vue'
 import Add from './components/Add.vue'
+import { createApp } from 'vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHashHistory(),
