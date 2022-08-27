@@ -38,9 +38,11 @@ export default {
             this.newContact = this.contacts.find(contact => {
                 return contact.email === this.email
             })
-            this.url = '/contact/' + this.newContact.id
-            if (this.url) {
-                this.$router.push(this.url)
+            if (this.newContact) {
+                this.url = '/contact/' + this.newContact.id
+                if (this.url) {
+                    this.$router.push(this.url)
+                    }
             }
         })
       }
